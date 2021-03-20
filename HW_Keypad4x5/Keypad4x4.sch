@@ -935,30 +935,30 @@ F 3 "" H 1050 3600 50  0001 C CNN
 	1    1050 3600
 	0    -1   -1   0   
 $EndComp
-Text Label 3950 4900 0    50   ~ 0
+Text Label 4150 5200 0    50   ~ 0
 USBD+
-Text Label 3950 4700 0    50   ~ 0
+Text Label 4150 4400 0    50   ~ 0
 USBD-
 $Comp
-L Device:R R7
+L Device:R R3
 U 1 1 605D1D88
-P 3800 4700
-F 0 "R7" V 3593 4700 50  0000 C CNN
-F 1 "R100" V 3684 4700 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3730 4700 50  0001 C CNN
-F 3 "~" H 3800 4700 50  0001 C CNN
-	1    3800 4700
+P 4000 4400
+F 0 "R3" V 3793 4400 50  0000 C CNN
+F 1 "R100" V 3884 4400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3930 4400 50  0001 C CNN
+F 3 "~" H 4000 4400 50  0001 C CNN
+	1    4000 4400
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R8
 U 1 1 605D2FC9
-P 3800 4900
-F 0 "R8" V 3900 4900 50  0000 C CNN
-F 1 "R100" V 4000 4900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3730 4900 50  0001 C CNN
-F 3 "~" H 3800 4900 50  0001 C CNN
-	1    3800 4900
+P 4000 5200
+F 0 "R8" V 4100 5200 50  0000 C CNN
+F 1 "R100" V 4200 5200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3930 5200 50  0001 C CNN
+F 3 "~" H 4000 5200 50  0001 C CNN
+	1    4000 5200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1025,10 +1025,10 @@ Wire Wire Line
 Wire Wire Line
 	1800 3550 1800 3600
 $Comp
-L Device:R R3
+L Device:R R4
 U 1 1 603D7B76
 P 7100 4650
-F 0 "R3" H 7170 4696 50  0000 L CNN
+F 0 "R4" H 7170 4696 50  0000 L CNN
 F 1 "R471" H 7170 4605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7030 4650 50  0001 C CNN
 F 3 "~" H 7100 4650 50  0001 C CNN
@@ -1047,10 +1047,10 @@ F 3 "~" H 7100 5000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R4
+L Device:R R5
 U 1 1 603E4E7D
 P 7600 4650
-F 0 "R4" H 7670 4696 50  0000 L CNN
+F 0 "R5" H 7670 4696 50  0000 L CNN
 F 1 "R471" H 7670 4605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7530 4650 50  0001 C CNN
 F 3 "~" H 7600 4650 50  0001 C CNN
@@ -1069,10 +1069,10 @@ F 3 "~" H 7600 5000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R5
+L Device:R R6
 U 1 1 603F1242
 P 8100 4650
-F 0 "R5" H 8170 4696 50  0000 L CNN
+F 0 "R6" H 8170 4696 50  0000 L CNN
 F 1 "R471" H 8170 4605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8030 4650 50  0001 C CNN
 F 3 "~" H 8100 4650 50  0001 C CNN
@@ -1091,10 +1091,10 @@ F 3 "~" H 8100 5000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R6
+L Device:R R7
 U 1 1 603FB3A2
 P 8600 4650
-F 0 "R6" H 8670 4696 50  0000 L CNN
+F 0 "R7" H 8670 4696 50  0000 L CNN
 F 1 "R471" H 8670 4605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8530 4650 50  0001 C CNN
 F 3 "~" H 8600 4650 50  0001 C CNN
@@ -1321,17 +1321,6 @@ F 3 "~" H 3200 3200 50  0001 C CNN
 	1    3200 3200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Power_Protection:USBLC6-2SC6 U3
-U 1 1 60653FBB
-P 3000 4800
-F 0 "U3" H 3300 4350 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 3350 4250 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3000 4300 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 3200 5150 50  0001 C CNN
-	1    3000 4800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1750 4700 2600 4700
 Wire Wire Line
@@ -1339,24 +1328,24 @@ Wire Wire Line
 $Comp
 L power:GND #PWR014
 U 1 1 6067624B
-P 3000 5200
-F 0 "#PWR014" H 3000 4950 50  0001 C CNN
-F 1 "GND" V 3005 5072 50  0000 R CNN
-F 2 "" H 3000 5200 50  0001 C CNN
-F 3 "" H 3000 5200 50  0001 C CNN
-	1    3000 5200
-	1    0    0    -1  
+P 3600 4800
+F 0 "#PWR014" H 3600 4550 50  0001 C CNN
+F 1 "GND" V 3605 4672 50  0000 R CNN
+F 2 "" H 3600 4800 50  0001 C CNN
+F 3 "" H 3600 4800 50  0001 C CNN
+	1    3600 4800
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5VD #PWR013
 U 1 1 60676FDC
-P 3000 4400
-F 0 "#PWR013" H 3000 4250 50  0001 C CNN
-F 1 "+5VD" H 3015 4573 50  0000 C CNN
-F 2 "" H 3000 4400 50  0001 C CNN
-F 3 "" H 3000 4400 50  0001 C CNN
-	1    3000 4400
-	1    0    0    -1  
+P 2800 4800
+F 0 "#PWR013" H 2800 4650 50  0001 C CNN
+F 1 "+5VD" H 2815 4973 50  0000 C CNN
+F 2 "" H 2800 4800 50  0001 C CNN
+F 3 "" H 2800 4800 50  0001 C CNN
+	1    2800 4800
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:Crystal_GND24 Y1
@@ -1549,10 +1538,10 @@ F 3 "~" H 8450 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Female J6
+L Connector:Conn_01x02_Female J7
 U 1 1 60ABA4A4
 P 7450 6150
-F 0 "J6" H 7342 5825 50  0000 C CNN
+F 0 "J7" H 7342 5825 50  0000 C CNN
 F 1 "L_Comm" H 7342 5916 50  0000 C CNN
 F 2 "Connector_PinSocket_2.00mm:PinSocket_1x02_P2.00mm_Horizontal" H 7450 6150 50  0001 C CNN
 F 3 "~" H 7450 6150 50  0001 C CNN
@@ -1560,10 +1549,10 @@ F 3 "~" H 7450 6150 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J7
+L Connector:Conn_01x02_Male J6
 U 1 1 60ABA4AA
 P 8450 6050
-F 0 "J7" H 8558 6231 50  0000 C CNN
+F 0 "J6" H 8558 6231 50  0000 C CNN
 F 1 "R_Comm" H 8558 6140 50  0000 C CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Horizontal" H 8450 6050 50  0001 C CNN
 F 3 "~" H 8450 6050 50  0001 C CNN
@@ -1604,13 +1593,9 @@ Wire Wire Line
 Connection ~ 5350 6900
 Wire Wire Line
 	5350 6900 5350 7050
-Wire Wire Line
-	3650 4700 3400 4700
-Wire Wire Line
-	3400 4900 3650 4900
-Text Label 3400 4700 0    50   ~ 0
+Text Label 3600 4400 0    50   ~ 0
 USBDM-
-Text Label 3400 4900 0    50   ~ 0
+Text Label 3600 5200 0    50   ~ 0
 USBDM+
 Wire Wire Line
 	5650 6700 5550 6700
@@ -1680,4 +1665,27 @@ Text Label 10250 4950 2    50   ~ 0
 VSS
 Text Label 10250 4650 2    50   ~ 0
 VDD5V
+$Comp
+L Power_Protection:USBLC6-2SC6 U3
+U 1 1 6058BDCC
+P 3200 4800
+F 0 "U3" V 3750 4600 50  0000 L CNN
+F 1 "USBLC6-2SC6" V 3850 4600 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3200 4300 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 3400 5150 50  0001 C CNN
+	1    3200 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 4700 2600 4400
+Wire Wire Line
+	2600 4400 3100 4400
+Wire Wire Line
+	2600 4900 2600 5200
+Wire Wire Line
+	2600 5200 3100 5200
+Wire Wire Line
+	3300 5200 3850 5200
+Wire Wire Line
+	3300 4400 3850 4400
 $EndSCHEMATC
